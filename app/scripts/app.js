@@ -28,11 +28,16 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
         controllerAs: 'about'
-      })
+      })   
       .when('/charter', {
         templateUrl: 'views/charter.html',
         controller: 'CharterCtrl',
         controllerAs: 'charter'
+      })
+      .when('/contact', {
+        templateUrl: 'views/contact.html',
+        controller: 'ContactCtrl',
+        controllerAs: 'contact'
       })
       .otherwise({
         redirectTo: '/'

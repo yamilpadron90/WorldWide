@@ -33,7 +33,7 @@
               <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="#/">worldWide</a>
+              <a class="navbar-brand" href="#/"><b>Air Charters WorldWide</b></a>
           </div>
 
           <!-- Menu -->
@@ -42,7 +42,7 @@
               <li class="active"><a href="#/">Home</a></li>
               <li><a ng-href="#/charter">Charter flight Request</a></li>
               <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/">Contact</a></li>
+              <li><a ng-href="#/contact">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -50,10 +50,21 @@
     </div>
 
     <div class="container">
-      <div ng-view=""></div>
+      <div ng-view></div>
     </div>
 
     <div class="footer">
+        <div class="container">
+            <p>
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> info@airchartersww.com
+            </p>
+            <p>
+                <span class="glyphicon glyphicon-phone" aria-hidden="true"></span> +1 (514) 561-7049
+            </p>
+        </div>        
+        <div class="container">
+            <p>Facebook | Twitter | LinkedIn</p>
+        </div>        
       <div class="container">
         <p>© Copyright 2016 Air Charters Worldwide / A Registered Company in Quebec - Canada (NEQ No. 2271373344) . All Rights Reserved. Powered by eHost</p>
       </div>
@@ -91,6 +102,7 @@
         <script src="scripts/controllers/about.js"></script>
         <script src="scripts/controllers/charter.js"></script>
         <script src="scripts/controllers/menu.js"></script>
+        <script src="scripts/controllers/contact.js"></script>
         <!-- endbuild -->
 </body>
 </html>
