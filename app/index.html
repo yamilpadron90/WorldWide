@@ -39,10 +39,10 @@
           <!-- Menu -->
           <div class="collapse navbar-collapse" id="js-navbar-collapse" ng-controller="MenuCtrl">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/charter">Charter flight Request</a></li>
-              <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/contact">Contact</a></li>
+              <li class="{{ menuItem === 'Home' ? 'active' : '' }}"><a href="#/" ng-click="MenuClicked('Home')">Home</a></li>
+              <li class="{{ menuItem === 'Charter' ? 'active' : '' }}"><a ng-href="#/charter" ng-click="MenuClicked('Charter')">Charter flight Request</a></li>
+              <li class="{{ menuItem === 'About' ? 'active' : '' }}"><a ng-href="#/about" ng-click="MenuClicked('About')">About</a></li>
+              <li class="{{ menuItem === 'Contact' ? 'active' : '' }}"><a ng-href="#/contact" ng-click="MenuClicked('Contact')">Contact</a></li>
             </ul>
           </div>
         </div>

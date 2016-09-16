@@ -7,11 +7,11 @@
  * # MenuCtrl
  * Controller of the worldWideApp
  */
-angular.module('worldWideApp')
-  .controller('MenuCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+angular.module('worldWideApp').controller('MenuCtrl', function ($scope) 
+{
+    $scope.menuItem = 'Home';
+    $scope.MenuClicked = function(menu)
+    {
+        $scope.menuItem = menu;
+    };
+});
