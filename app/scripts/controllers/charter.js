@@ -27,8 +27,6 @@ angular.module('worldWideApp')
         ];
         $scope.flightOp = flightOp;
         
-        $scope.numberFlight = [1];
-        
         var beverage = [
             'Standard Service (No Alcoholic Beverages)',
             'Open Bar',
@@ -46,5 +44,22 @@ angular.module('worldWideApp')
             'See Remarks'
         ];
         $scope.catering = catering;
+        
+        /* source */
+        var n = 1;
+        $scope.numberFlight = [n];
+        $scope.Add = function()
+        {
+            n++;
+            $scope.numberFlight.push(n);
+        };       
+        $scope.Delete = function()
+        {
+            n--;
+            $scope.numberFlight.splice(-1, 1);
+        };
+        
+        /* Validations */
+        $scope.charter = {};
         
   });

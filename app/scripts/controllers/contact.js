@@ -9,14 +9,14 @@
  */
 angular.module('worldWideApp').controller('ContactCtrl', function ($scope, apiContact) 
 {
-    $scope.info = {
+    /*$scope.info = {
         name: 'Yamil Padron',
         email: 'yamilpadron@gmail.com',
         company: 'mycompany',
         phone: 78555444,
         website: 'www.mycompany.com',
         memo: 'hello World'
-    };
+    };*/
     
     $scope.Works = function()
     {
